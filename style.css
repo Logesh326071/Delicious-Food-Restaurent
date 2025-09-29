@@ -1,0 +1,1120 @@
+:root{
+    --brown:#B82132;
+    --lightbrown:#D2665A;
+    --yellow:#F2B28C;
+    --white:#F6DED8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-page h2 a{
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--white);
+    text-align: center;
+    margin-left: 20px;
+}
+
+.nav-items li{
+    color: var(--white);
+    display: inline;
+}
+
+.main-page .fa-solid{
+    margin-right: 10px;
+    color: var(--white);
+}
+
+.nav-items a{
+    font-size: 16px;
+    padding: 5px 10px;
+    color: var(--white);
+    margin-left: 10px;
+}
+
+.nav-items a:hover{
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--lightbrown);
+    transition: 0.3s ease-in;
+}
+
+.nav-items{
+    list-style-type: none;
+    font-size: 10px;
+    font-weight: 800;
+    margin-right: 50px;
+    display: flex;
+}
+
+.menu{
+    display: none;
+}
+
+.main-page{
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel_name{
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    color: hsl(0, 0%, 100%);
+}
+
+.panel_name h1{
+    margin-bottom: 10px;
+}
+
+.head-img {
+    overflow: hidden;
+}
+
+.front-image{
+    width: 100%;
+    height: 900px;
+}
+
+.head-img h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    width: 800px;
+    margin: 45px auto;
+    padding: 20px;
+    background-color: var(--brown);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.head-img h1 .fa-regular,.excite{
+    margin-right: 20px;
+}
+
+.cart-1,.cart-2{
+    height: 350px;
+    border-radius: 10px;
+    padding: 35px;
+    margin: 35px 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.cart-1 .nonveg-img span,.cart-2 .veg-img span{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 800;
+   color: var(--brown);
+}
+
+.cart-1 .nonveg-img,.cart-2 .veg-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.cart-1 .nonveg-img img,.cart-2 .veg-img img{
+    width: 15vw;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cart-3{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-3 .delivery,.dine-out{
+    width: 350px;
+    height: 350px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 35px 40px;
+    cursor: pointer;
+}
+
+.restaurent .cart-3 .delivery h2,.dine-out h2{
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--brown);
+}
+
+.restaurent .cart-3 .delivery h3,.dine-out h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: var(--yellow);
+}
+
+.restaurent .cart-3 .delivery h4,.dine-out h4{
+    width: fit-content;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--white);
+    padding: 10px 5px;
+    border-radius: 50px;
+    background: linear-gradient(to right,var(--lightbrown),var(--yellow));
+    background-color: var(--lightbrown);
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.restaurent .cart-3 .delivery h4:hover,.dine-out h4:hover{
+    transform: translateX(20px);
+}
+
+.cart-3 .delivery-order,.dine-out .dine-out-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-3 .delivery .fa-solid,.dine-out-in .fa-solid{
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 15px;
+    margin-right: 50px;
+    color: var(--white);
+    background-color: var(--brown);
+    transition: 0.5s;
+}
+
+.cart-3 .delivery .fa-solid:hover,.dine-out-in .fa-solid:hover{
+    transform: translateX(20px);
+}
+
+.cart-3 .delivery img,.dine-out-in img{
+   width: 120px;
+   transition: 0.5s;
+}
+
+.cart-3 .delivery img:hover,.dine-out-in img:hover{
+    transform: translateY(-20px);
+}
+
+.cart-4{
+    height: 500px;
+    border: 1px solid var(--yellow);
+    border-radius: 20px;
+    margin: 40px;
+    padding:50px;
+    overflow: hidden;
+    background: linear-gradient(to right,var(--yellow),var(--white));
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.cart-4 h1{
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: var(--brown);
+}
+
+.cart-4 p{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--lightbrown);
+}
+
+.cart-4 .apps-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.app{
+    display: flex;
+    gap: 20px;
+}
+
+.app img{
+    width: 50px;
+}
+
+.play-store,.apple-store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.play-store:hover,.apple-store:hover{
+    transform: translateY(-10px);
+}
+
+.play-store h4,.apple-store h4{
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+.play-store h2,.apple-store h2{
+    color: hsl(0, 0%, 100%);
+}
+
+.get-app-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+}
+
+.mobile-img{
+    position: relative;
+    margin-top: 20px;
+}
+
+.mobile-img img{
+    width: 450px;
+    object-fit: contain;
+}
+
+.QR-code{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.QR-code h4{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.QR-code img{
+    width: 220px;
+}
+
+.QR-code h4{
+    color: hsl(221, 15%, 41%);
+}
+
+.cart-5{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.cities-name ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-5 h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
+
+.cart-5 .cities-name li{
+    width: 20%;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 20px;
+    border: 1px solid var(--lightbrown);
+    border-radius: 20px;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: 0.5s;
+}
+
+.cities-name li a{
+    color: hsl(0, 0%, 0%);
+}
+
+.cart-5 .cities-name li:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    width: 100vw;
+    height: auto;
+    background-color: var(--yellow);
+    list-style-type: none;
+    border-radius: 20px;
+    padding: 50px 130px;
+}
+
+
+.restaurent .footer h1{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 35px;
+}
+
+.footer .footer-list-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    margin-bottom: 20px;
+}
+
+.footer-list-item h4{
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.list-item-1 ul,.list-item-2 ul,.list-item-3 ul,.list-item-4 ul,.list-item-5 ul{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.list-item-1 ul li,.list-item-2 ul li,.list-item-3 ul li,.list-item-4 ul li,.list-item-5 ul li{
+    margin-bottom: 15px;
+}
+
+.list-item-4{
+    grid-row: span 2;
+}
+
+.footer-list-item a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.list-item-5 ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list-item-5 ul li{
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.list-item-5 ul li:hover{
+    transform: scale(1.1);
+}
+
+.list-item-5 ul li:nth-child(1){
+    background-color: hsl(210, 90%, 40%);
+    border: none;
+}
+
+.list-item-5 ul li a{
+    color: hsl(0, 0%, 100%);
+    padding: 3px 5px;
+}
+
+
+.list-item-5 ul li:nth-child(2){
+    background-color: hsl(0, 100%, 50%);
+    border: none;
+}
+
+.list-item-5 ul li:nth-child(3){
+    background-color: hsl(340, 75%, 54%);
+    border: none;
+}
+
+.list-item-5 ul li:nth-child(4){
+    background-color: hsl(214, 89%, 52%);
+    border: none;
+}
+
+.list-item-5 ul li:nth-child(5){
+    background-color: #1D9BF0;
+    border: none;
+}
+
+.footer-app{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-play-store img,.footer-apple-store img{
+    width: 30px;
+}
+
+.footer-play-store-content h5,.footer-apple-store-content h5{
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-play-store-content h3,.footer-apple-store-content h3{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-play-store,.footer-apple-store{
+    width: 180px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: hsl(0, 0%, 0%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.4s;
+}
+
+.footer-play-store:hover,.footer-apple-store:hover{
+    transform: scale(1.1);
+}
+
+.privacy-policy{
+    color: hsl(0, 0%, 100%);
+}
+
+.hidden{
+    display: none;
+}
+
+.toggle-btn{
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+}
+
+.show-less{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+
+
+
+/*                     Mobile view           */
+
+@media screen and (max-width:1260px){
+
+    .cart-4{
+        height: fit-content;
+        padding: 25px;
+        margin: auto 40px;
+    }
+    
+    .cart-4 h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .cart-4 p{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    
+    .app{
+        display: flex;
+        gap: 5px;
+    }
+
+    .app img{
+        width: 30px;
+    }
+
+    .play-store,.apple-store{
+        width: 200px;
+        display: flex;
+        gap: 8px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .play-store h4,.apple-store h4{
+        font-size: 15px;
+    }
+
+    .play-store h2,.apple-store h2{
+        font-size: 12px
+    }
+
+    .get-app-img{
+        gap: 100px;
+    }
+    
+    .mobile-img{
+        margin-top: 20px;
+    }
+    
+    .mobile-img img{
+        width: 320px;
+    }
+    
+    .QR-code h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .QR-code img{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:900px){
+
+    .panel_name h1{
+        font-size: 25px;
+    }
+
+    .panel_name p{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .head-img{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .head-img h1{
+        font-size: 28px;
+    }
+
+    .cart-1,.cart-2{
+        height: fit-content;
+    }
+
+    .cart-1 h2,.cart-2 h2{
+        font-size: 18px;
+    }
+
+    .cart-1 .nonveg-img span,.cart-2 .veg-img span{
+        font-size: 20px;
+    }
+
+    .cart-1 .nonveg-img img,.cart-2 .veg-img img{
+        max-width: 100%;
+        height: 100px;
+    }
+
+    .restaurent .cart-3 .delivery h2,.dine-out h2{
+        font-size: 23px;
+    }
+
+    .restaurent .cart-3 .delivery h3,.dine-out h3{
+        font-size: 18px;
+    }
+
+    .restaurent .cart-3 .delivery h4,.dine-out h4{
+        font-size: 15px;
+    }
+
+    .cart-3 .delivery .fa-solid,.dine-out-in .fa-solid{
+        font-size: 20px;
+    }
+
+    .cart-3 .delivery img,.dine-out-in img{
+        max-width: 100%;
+    }
+
+    .cart-4{
+        height: fit-content;
+        padding: 25px;
+        margin: 35px;
+    }
+    
+    .cart-4 h1{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .cart-4 p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    
+    .app{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .app img{
+        width: 30px;
+    }
+
+    .play-store,.apple-store{
+        width: 200px;
+        display: flex;
+        gap: 8px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .play-store h4,.apple-store h4{
+        font-size: 12px;
+    }
+
+    .play-store h2,.apple-store h2{
+        font-size: 10px
+    }
+
+    .get-app-img{
+        gap: 100px;
+    }
+    
+    .mobile-img{
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    .mobile-img img{
+        width: 320px;
+    }
+    
+    .QR-code h4{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    
+    .QR-code img{
+        width: 160px;
+    }
+
+    .cart-5 h2{
+        font-size: 30px;
+    }
+
+    .cities-name ul li a{
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width:680px){
+    .menu{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .show{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 45px;
+        right: -10px;
+        height: 200px;
+        text-align: center;
+        background-color: var(--yellow);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .nav-items li a{
+        font-size: 15px;
+    }
+
+    .main-page li{
+        margin-right: 20px;
+    }
+
+    .main-page h2 a{
+        font-size: 25px;
+    }
+
+    .panel_name h1{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .panel_name p{
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .head-img{
+        margin: 18px;
+    }
+
+    .head-img h1{
+        font-size: 20px;
+    }
+
+    .cart-1 h2,.cart-2 h2{
+        font-size: 15px;
+    }
+
+    .cart-1 .nonveg-img span,.cart-2 .veg-img span{
+        font-size: 14px;
+    }
+
+    .cart-1 .nonveg-img img,.cart-2 .veg-img img{
+        max-width: 100%;
+        height: 100px;
+    }
+
+    .cart-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .restaurent .cart-3 .delivery,.dine-out{
+        width: 300px;
+        height: 320px;
+    }
+
+    .restaurent .cart-3 .delivery h2,.dine-out h2{
+        font-size: 22px;
+    }
+
+    .restaurent .cart-3 .delivery h3,.dine-out h3{
+        font-size: 16px;
+    }
+
+    .restaurent .cart-3 .delivery h4,.dine-out h4{
+        font-size: 14px;
+    }
+
+    .cart-3 .delivery .fa-solid,.dine-out-in .fa-solid{
+        font-size: 25px;
+    }
+
+    .cart-3 .delivery img,.dine-out-in img{
+        max-width: 100%;
+    }
+
+        
+    .cart-4{
+        height: fit-content;
+        padding: 18px;
+        margin: 25px;
+    }
+    
+    .cart-4 h1{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .cart-4 p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    
+    .app{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .app img{
+        width: 25px;
+    }
+
+    .play-store,.apple-store{
+        width: 150px;
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+        margin-top: 16px;
+    }
+
+    .play-store h4,.apple-store h4{
+        font-size: 10px;
+    }
+
+    .play-store h2,.apple-store h2{
+        font-size: 8px
+    }
+
+    .get-app-img{
+        gap: 80px;
+    }
+    
+    .mobile-img{
+        margin-top: 20px;
+    }
+    
+    .mobile-img img{
+        width: 10px;
+    }
+    
+    .QR-code h4{
+        font-size: 12px;
+    }
+    
+    .QR-code img{
+        width: 120px;
+    }
+
+    .cart-5 h2{
+        font-size: 20px;
+    }
+
+    .cart-5 .cities-name li{
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cities-name ul li a{
+        font-size: 12px;
+    }
+
+    .footer h1{
+        font-size: 26px;
+    }
+
+    .footer-list-item h4{
+        font-size: 18px;
+    }
+
+    .footer-list-item li a{
+        font-size: 15px;
+    }
+}
+
+/* only for Qr image responsive */
+
+
+@media screen and (max-width:640px){
+    .cart-4{
+        height: fit-content;
+        padding: 18px;
+        margin: 25px;
+    }
+    
+    .cart-4 h1{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .cart-4 p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .app img{
+        width: 25px;
+    }
+
+    .play-store,.apple-store{
+        width: 150px;
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+        margin-top: 16px;
+    }
+
+    .play-store h4,.apple-store h4{
+        font-size: 10px;
+    }
+
+    .play-store h2,.apple-store h2{
+        font-size: 8px
+    }
+
+    .get-app-img{
+        gap: 80px;
+    }
+    
+    .mobile-img{
+        margin-top: 20px;
+    }
+    
+    .mobile-img img{
+        width: 10px;
+    }
+    
+    .QR-code h4{
+        font-size: 12px;
+    }
+    
+    .QR-code img{
+        width: 100px;
+    }
+
+}
+
+
+@media screen and (max-width:518px){
+    .cart-4{
+        max-width: 85%;
+        height: 420px;
+        padding: 25px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .get-app-img{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .play-store,.apple-store{
+        width: 280px;
+    }
+}
+
+
+@media screen and (max-width:468px){
+
+    .head-img{
+        margin: 8px;
+    }
+
+    .head-img h1{
+        font-size: 18px;
+    }
+    
+    .cart-1,.cart-2{
+        padding: 25px;
+        margin: 25px 20px;
+    }
+
+    .cart-1 h2,.cart-2 h2{
+        font-size: 12px;
+    }
+
+    .cart-1 .nonveg-img span,.cart-2 .veg-img span{
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .cart-1 .nonveg-img img,.cart-2 .veg-img img{
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .restaurent .cart-3 .delivery,.dine-out{
+        height: fit-content;
+    }
+
+    .restaurent .cart-3 .delivery h2,.dine-out h2{
+        font-size: 18px;
+    }
+
+    .restaurent .cart-3 .delivery h3,.dine-out h3{
+        font-size: 14px;
+    }
+
+    .restaurent .cart-3 .delivery h4,.dine-out h4{
+        font-size: 11px;
+    }
+
+    .cart-3 .delivery .fa-solid,.dine-out-in .fa-solid{
+        font-size: 14px;
+    }
+
+    .cart-3 .delivery img,.dine-out-in img{
+        max-width: 100%;
+    }
+
+    .cart-4{
+        height: 420px;
+        padding: 25px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .app img{
+        width: 15px;
+    }
+
+    .play-store,.apple-store{
+        width: 260px;
+    }
+
+    .get-app-img{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .cart-5 h2{
+        font-size: 16px;
+    }
+
+    .footer{
+        padding: 25px 75px;
+    }
+
+    .footer h1{
+        font-size: 22px;
+    }
+
+    .footer-list-item h4{
+        font-size: 15px;
+    }
+
+    .footer-list-item li a{
+        font-size: 12px;
+    }
+
+    .footer-app h5{
+        font-size: 10px;
+    }
+
+    .footer-app h3{
+        font-size: 8px;
+    }
+
+    .privacy-policy{
+        font-size: 14px;
+    }
+
+    .footer-play-store img,.footer-apple-store img{
+        width: 20px;
+    }
+    
+    .footer-play-store,.footer-apple-store{
+        width: 128px;
+        height: 55px;
+        padding: 10px;
+    }
+
+    .footer-apple-store{
+        padding-left: 23px;
+    }
+}
